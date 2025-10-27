@@ -13,7 +13,7 @@ public class MenuManager : MonoBehaviour
         textoGameOver.SetActive(false);
 
         // Pausar el juego hasta que el jugador presione "Jugar"
-        Time.timeScale = 0;
+       // Time.timeScale = 0;
     }
 
     /*public void IniciarJuego()
@@ -24,6 +24,7 @@ public class MenuManager : MonoBehaviour
 
     public void MostrarGameOver()
     {
+        Debug.Log("Juego Terminado");
         textoGameOver.SetActive(true);
 
         // Pausar el juego
