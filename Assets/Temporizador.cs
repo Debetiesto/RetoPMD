@@ -33,7 +33,10 @@ public class Temporizador : MonoBehaviour
             }
         }
     }
-
+    public void DetenerTiempo()
+    {
+        tiempoCorriendo = false;
+    }
     void ActualizarUI()
     {
         // Convierte a minutos y segundos
