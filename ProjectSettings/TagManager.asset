@@ -10,6 +10,7 @@ TagManager:
   - Pared
   - GameOver
   - Audio
+  - Victoria
   layers:
   - Default
   - TransparentFX
