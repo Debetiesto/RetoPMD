@@ -12,7 +12,7 @@ public class GameOver : MonoBehaviour
             Debug.Log(" Explosión instanciada en " + other.transform.position);
             Instantiate(explosionPrefab, other.transform.position, Quaternion.identity);
             // Destruye la pelota
-            Destroy(other.gameObject);
+            Destroy(other.gameObject);            
 
             // Llamar al Game Over
             Invoke(nameof(Terminado), 1.5f);
@@ -21,14 +21,9 @@ public class GameOver : MonoBehaviour
 
     void Terminado()
     {
+        FindObjectOfType<Temporizador>().DetenerTiempo();
         menuManager.MostrarGameOver();
-        // Reinicia la escena actual después de 1.5 segundos
-        Invoke("ReiniciarEscena", 1.5f);
-
     }
 
-    void ReiniciarEscena()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
 }

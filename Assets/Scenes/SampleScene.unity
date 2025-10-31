@@ -2040,7 +2040,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 628275214}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1053304438}
+        m_TargetAssemblyTypeName: BotonesManager, Assembly-CSharp
+        m_MethodName: reiniciarNivel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &628275214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2807,6 +2819,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907092365}
   m_CullTransparentMesh: 1
+--- !u!1 &1053304437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053304439}
+  - component: {fileID: 1053304438}
+  m_Layer: 0
+  m_Name: Reiniciar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053304438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053304437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e1454a4294e04a8f07e076aebbf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1053304439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053304437}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.8201294, y: -1.7140198, z: -0.058718447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1068245353
 GameObject:
   m_ObjectHideFlags: 0
@@ -4854,6 +4910,7 @@ GameObject:
   - component: {fileID: 1825462533}
   - component: {fileID: 1825462532}
   - component: {fileID: 1825462536}
+  - component: {fileID: 1825462537}
   m_Layer: 5
   m_Name: Game Over
   m_TagString: GameOver
@@ -4960,6 +5017,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoGameOver: {fileID: 1825462531}
+--- !u!225 &1825462537
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825462531}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1893886445
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,3 +5562,4 @@ SceneRoots:
   - {fileID: 541336878}
   - {fileID: 122945900}
   - {fileID: 1157817590}
+  - {fileID: 1053304439}
