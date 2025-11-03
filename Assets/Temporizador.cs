@@ -33,10 +33,7 @@ public class Temporizador : MonoBehaviour
             }
         }
     }
-    public void DetenerTiempo()
-    {
-        tiempoCorriendo = false;
-    }
+
     void ActualizarUI()
     {
         // Convierte a minutos y segundos
@@ -47,6 +44,10 @@ public class Temporizador : MonoBehaviour
 
     void FinDelTiempo()
     {
-        menuManager.MostrarGameOver();
+        menuManager.MostrarGameOver();   
+    }
+    public void DetenerTiempo()
+    {
+        tiempoCorriendo = false;
     }
 }

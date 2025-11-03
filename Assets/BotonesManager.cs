@@ -7,4 +7,9 @@ public class BotonesManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    public void volverMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

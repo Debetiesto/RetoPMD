@@ -5,6 +5,9 @@ public class GameOver : MonoBehaviour
 {
     public MenuManager menuManager;
     public GameObject explosionPrefab;
+    public BotonesManager botonesManager;
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Pelota"))
