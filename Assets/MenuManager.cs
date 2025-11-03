@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
         Debug.Log("Juego Terminado");
         textoGameOver.SetActive(true);
 
-       // Time.timeScale = 0;
+        // Time.timeScale = 0;
 
         // O reiniciar la escena tras unos segundos (opcional)
         // Invoke("ReiniciarEscena", 60f);

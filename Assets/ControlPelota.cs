@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ControlPelota : MonoBehaviour
 {
     public float maxSpeed = 10f;
     private Rigidbody2D rb;
     public float minX, maxX, minY, maxY;
+    private AudioSource audio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audio = GetComponent<AudioSource>();
 
         float ballHalfWidth = transform.localScale.x / 2f;
         float ballHalfHeight = transform.localScale.y / 2f;
@@ -54,6 +57,13 @@ public class ControlPelota : MonoBehaviour
 
             // Mantener la velocidad constante (por ejemplo 8 unidades)
             rb.linearVelocity = direction * rb.linearVelocity.magnitude;
+
+            audio.Play();
         }
+        if (collision.gameObject.CompareTag("Obstaculo"))
+        {
+            audio.Play();
+        }
+
     }
 }
