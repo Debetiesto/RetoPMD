@@ -12,4 +12,9 @@ public class BotonesManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void siguienteLvl()
+    {
+        SceneManager.LoadScene("NivelUnai");
+    }
 }
