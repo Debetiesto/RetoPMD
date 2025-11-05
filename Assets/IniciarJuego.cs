@@ -6,6 +6,6 @@ public class IniciarJuego : MonoBehaviour
 {
     public void abrirJuego()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("NivelLuis");
     }
 }
