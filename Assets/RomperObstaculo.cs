@@ -12,10 +12,13 @@ public class RomperObstaculo : MonoBehaviour
             // Crear explosión en la posición del coche
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-            ControlObstaculos.CocheDestruido();
+            ControlObstaculosCoches.CocheDestruido();
+
 
             // Destruye este bloque
             Destroy(gameObject);
         }
     }
+
+
 }

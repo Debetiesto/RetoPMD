@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ControlObstaculos : MonoBehaviour
+public class ControlObstaculosCoches : MonoBehaviour
 {
     public static int cochesRestantes = 18; // Cantidad total de coches en el nivel
     public GameObject winCanvas;
@@ -17,9 +17,10 @@ public class ControlObstaculos : MonoBehaviour
         if (cochesRestantes <= 0)
         {
             // Busca el CarManager y llama a Victory
-            FindObjectOfType<ControlObstaculos>().MostrarVictoria();
+            FindObjectOfType<ControlObstaculosCoches>().MostrarVictoria();
         }
     }
+
     void MostrarVictoria()
     {
         winCanvas.SetActive(true);
