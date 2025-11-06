@@ -16,10 +16,12 @@ public class BotonesManager : MonoBehaviour
     public void siguienteLvlLuis()
     {
         SceneManager.LoadScene("NivelLuis");
+        Time.timeScale = 1.0f;
     }
 
     public void siguienteLvlUnai()
     {
         SceneManager.LoadScene("NivelUnai");
+        Time.timeScale = 1.0f;
     }
 }
