@@ -4,7 +4,7 @@ public class ControlJugador : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField]
-    [Range(2.0f, 8.0f)]
+    [Range(2.0f, 15.0f)]
     private float speed = 4.0f;
     private float minX, maxX;
     public float maxSpeed = 10f;

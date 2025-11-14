@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257.87653, y: 191.8}
+  m_AnchoredPosition: {x: -669, y: 428}
   m_SizeDelta: {x: 469.2557, y: 62.8356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60076526
@@ -1568,7 +1568,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3939,6 +3939,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4747741298074775486, guid: 86d38be4937d1c344b9c7f22912685eb, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4959970586597024578, guid: 86d38be4937d1c344b9c7f22912685eb, type: 3}
       propertyPath: m_Material
       value: 
@@ -5147,7 +5151,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0178, y: -0.0534, z: 0}
-  m_LocalScale: {x: 3.8665946, y: 3.0979, z: 1}
+  m_LocalScale: {x: 4.413331, y: 3.5359428, z: 1.1414}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5829,7 +5833,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1488452267}
         m_TargetAssemblyTypeName: BotonesManager, Assembly-CSharp
-        m_MethodName: siguienteLvl
+        m_MethodName: siguienteLvlUnai
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
