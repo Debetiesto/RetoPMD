@@ -925,7 +925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -643, y: 405}
+  m_AnchoredPosition: {x: -315.87, y: 223.58}
   m_SizeDelta: {x: 469.2557, y: 62.8356}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &386787904
@@ -1276,8 +1276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52fe64f6d9fa0b44b23b98d1895d36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  wallTag: Wall
 --- !u!50 &454508380
 Rigidbody2D:
   serializedVersion: 5
