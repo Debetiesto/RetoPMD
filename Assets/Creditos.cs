@@ -1,10 +1,12 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class Creditos : MonoBehaviour
 {
-    public void creditos()
+    public VideoPlayer videoPlayer;
+
+    public void ReproducirCreditos()
     {
-        SceneManager.LoadScene("Creditos");
+        videoPlayer.Play();
     }
 }
